@@ -2,7 +2,7 @@
 
 ## Description
 
-The flow duration curve (FDC) is a signature catchment characteristic that depicts graphically the relationship between the exceedance probability of streamflow and its magnitude. This curve is used widely for flood risk analysis, water quality management, and the design of hydroelectric power plants (among others). Several mathematical formulations have been proposed to mimic the FDC. Yet, these functions are often not flexible enough to portray accurately the functional shape of the FDC for a large range of catchments. \cite{vrugt2013} introduced the soil water characteristic (SWC) of van Genuchten \citep{genuchten1980} as new parametric expression of the FDC for diagnostic model evaluation with DREAM$_{\rm (ABC)}$. \cite{sadegh2016} build on the work of \cite{vrugt2013} and compared several models of the SWC against their counterparts published in the literature. These new expressions were shown to fit well the empirical FDCs of the 438 watersheds of the MOPEX data set. Here, we present a MATLAB and Python toolbox, called FDCFIT which contains the fifteen different FDC functions described in \cite{sadegh2016} and returns the values of their coefficients for a given discharge record, along with graphical output of the fit. Two case studies are used to illustrate the main capabilities and functionalities of the FDCFIT toolbox.
+The flow duration curve (FDC) is a signature catchment characteristic that depicts graphically the relationship between the exceedance probability of streamflow and its magnitude. This curve is used widely for flood risk analysis, water quality management, and the design of hydroelectric power plants (among others). Several mathematical formulations have been proposed to mimic the FDC. Yet, these functions are often not flexible enough to portray accurately the functional shape of the FDC for a large range of catchments. _Vrugt and Sadegh_ (2013) introduced the soil water characteristic (SWC) of _van Genuchten_ (1980) as new parametric expression of the FDC for diagnostic model evaluation with the DREAM$_{(ABC)}$ algorithm. _Sadegh et al._ (2016) build on the work of _Vrugt and Sadegh_ (2013) and compared several models of the SWC against their counterparts published in the literature. These new expressions were shown to fit well the empirical FDCs of the 438 watersheds of the MOPEX data set. Here, we present a MATLAB and Python toolbox, called FDCFIT which contains the fifteen different FDC functions described in _Sadegh et al_. (2016) and returns the values of their coefficients for a given discharge record, along with graphical output of the fit. Two case studies are used to illustrate the main capabilities and functionalities of the FDCFIT toolbox.
 
 ## Getting Started
 
@@ -31,6 +31,12 @@ The flow duration curve (FDC) is a signature catchment characteristic that depic
 
 * Vrugt, Jasper A. (jasper@uci.edu) 
 
+## Literature
+
+1. Vrugt, J.A. (2017), FDCFIT: A MATLAB toolbox of parametric expressions for the flow duration curve, Manual, pp. 1-37
+2. Sadegh, M., J.A. Vrugt, X. Cu, and H.V. Gupta, (2016), The soil water characteristic as new class of parametric expressions of the flow duration curve, _Journal of Hydrology_, 535, pp. 438-456, https://doi.org/10.1016/j.jhydrol.2016.01.027
+3. Vrugt, J.A., and M. Sadegh (2013), Toward diagnostic model calibration and evaluation: Approximate Bayesian computation, _Water Resources Research_, 49, 4335–4345, https://doi.org/10.1002/wrcr.20354
+
 ## Version History
 
 * 1.0
@@ -38,5 +44,11 @@ The flow duration curve (FDC) is a signature catchment characteristic that depic
 * 2.0
     * Cleaning up code and enhancing postprocessing capabilities
     * Python implementation
+
+## Built-in Case Studies
+
+1. Example 1: French Broad River - wettest of MOPEX data set
+2. Example 2: Guadalupe River basin - driest of MOPEX data set
+3. Example 3: Ten different MOPEX data sets
 
 ## Acknowledgments
